@@ -6,7 +6,9 @@ resource "aws_s3_bucket" "dev_s3" {
   bucket_prefix = "dev-"
 
   tags = {
-    Environment      = "Dev"
+    Environment = "Dev"
+    yor_name    = "dev_s3"
+    yor_trace   = "8f6b8d8d-c226-4af7-91e3-6ad00c09e026"
   }
 }
 
